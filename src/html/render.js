@@ -1,6 +1,5 @@
 import {render} from 'react-entry-loader/render';
 import {document, navigator} from '../globals';
-import {store} from '../store';
 
 
 const isIEBelow11 = ()=> navigator.appVersion.indexOf('MSIE') !== -1;
@@ -29,6 +28,7 @@ const pageRenderer = (elemId, detectDialogId)=> (cmp)=> {
     return;
   }
 
+  // TODO track requests using the store
   addTouchWorkaround();
 
   // TODO: scripts are loaded async, we need to wait for

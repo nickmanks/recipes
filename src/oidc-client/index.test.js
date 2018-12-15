@@ -150,7 +150,7 @@ describe('<Oidc /> oidc-client events', ()=> {
     shallow(<Oidc onUserLoaded={onUserLoaded} />);
 
     const [[loaded]] = events.addUserLoaded.mock.calls;
-    loaded({access_token: 'token'}); // eslint-disable-line camelcase
+    loaded({id_token: 'token'}); // eslint-disable-line camelcase
 
     expect(onUserLoaded).toHaveBeenCalledWith({test: 'token'}, 'token');
   });
@@ -173,7 +173,7 @@ describe('<Oidc /> oidc-client events', ()=> {
     shallow(<Oidc stateToUrl={(state)=> `test-${state}`} />);
 
     const [[loaded]] = events.addUserLoaded.mock.calls;
-    loaded({state: 'state'}); // eslint-disable-line camelcase
+    loaded({state: 'state'});
 
     expect(history.replaceState).toHaveBeenCalledWith(null, null, 'test-state');
   });
