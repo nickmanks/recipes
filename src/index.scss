@@ -1,0 +1,47 @@
+@import url('//fonts.googleapis.com/icon?family=Material+Icons');
+@import url('//fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+
+@import 'react-toolbox/lib/commons';
+
+
+// https://fonts.googleapis.com/css?family=
+//      Roboto:300,400,400italic,500,500italic,700,700italic|
+//      Roboto+Mono:400,500,700|
+//      Material+Icons
+
+html {
+  margin: 0;
+  background-clip: content-box;
+  background-image: url('./image-hero.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+
+  font-family: 'Roboto', sans-serif;
+
+  background-origin: content-box;
+
+  -webkit-overflow-scrolling: touch;
+
+  body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto !important;
+  }
+
+  @media print {
+    background-image: initial;
+  }
+}
+
+.root {
+  width: 100%;
+  height: 100%;
+}
+
+input {
+  border-radius: 0;
+}

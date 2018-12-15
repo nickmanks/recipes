@@ -1,0 +1,10 @@
+
+// sass-lint:disable empty-args, no-misspelled-properties, no-css-comments
+
+@import 'react-toolbox/lib/colors';
+
+//  http://stackoverflow.com/questions/826782/how-to-disable-text-selection-highlighting-using-css
+@mixin noselect() {
+  -webkit-touch-callout: none; /* iOS Safari */
+  user-select: none; /* Chrome/Safari/Opera */
+}

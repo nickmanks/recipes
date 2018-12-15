@@ -1,0 +1,17 @@
+// sass-lint:disable property-sort-order
+
+$text-shaddow: #000;
+$text-color: #fff;
+
+.startup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translateX(-50%);
+  margin: 1rem;
+
+  text-shadow: 0 0 1rem $text-shaddow;
+  color: $text-color;
+  font-weight: bold;
+}
